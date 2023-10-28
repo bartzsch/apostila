@@ -94,6 +94,8 @@ width: 140px;
 
 margin: 2px;
 padding-bottom: 10px;
+transition: 0.7s;
+transition: 0.7s ease-out;
 }
 .painel h2{
 font-size: 24px;
@@ -172,4 +174,53 @@ footer{
 .busca{
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
+}
+.painel li:hover{
+ box-shadow: 0 0 5px #333;
+ transition: box-shadow 0.7s;
+ background-color: rgba(255, 255, 255, 0.8);
+ box-shadow: 0 0 5px #333;
+ transition: 0.7s;
+ transform: scale(1.2) rotate(-5deg);  
+ transition: 0.7s ease-in;
+}
+.painel li:nth-child(2n):hover{
+    transform: scale(1.2) rotate(-5deg);
+}
+@media (max-widht: 320px) {
+    .container{
+        width: 96%;
+    }
+    .header h1{
+        text-align: center;
+    }
+    .header h1 img{
+        max-width: 50%;
+    }
+    .sacola{
+        display: none;
+    }
+    .menu-opcoes{
+        position: static;
+        text-align: center;
+    }
+    .menu-opcoes ul li{
+        display: inline-block;
+        margin: 5px;
+    }
+    .busca,
+    .menu-departamentos,
+    .banner-destaque img{
+        margin-right: 0;
+        width: 100%;
+    }
+    .painel{
+        width: auto;
+    }
+    .painel li{
+        width: 30%;
+    }
+    .painel img{
+        width: 100%;
+    }
 }
