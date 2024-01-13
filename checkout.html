@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/open-iconic-bootstrap.css">
 </head><link rel="stylesheet" href="../css/bootstrap.css">
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="fixed-top" class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="index.html">Mirror Fashion</a>
 <div class="collapse navbar-collapse">
     <ul class="navbar-nav">
@@ -38,13 +38,26 @@
 
                 
                 <div class="col-md-4">
+                    <dd id="preco">129,90</dd>
+                    <div class=" card mb-3">
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="qtd">Quantidade:</label>
+                                <input type="number" id="qtd" min="1" max="99" value="1" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="total">Total:</label>
+                                <output id="total" class="form-control">129,90</output>
+                            </div>
+                        </div>
+                    </div>
 
                     <div class="card mb-3">
                         <div class="card-header">
                             <h2>Sua compra</h2>
                         </div>
                         <div class="card-body">
-                            <img src="./produtos/foto1-verde.png" alt="fuzzy Cardigan">
+                            <img src="./produtos/foto1-verde.png" alt="fuzzy Cardigan" class="img-thumbnail mb-3">
                             <dl>
                                 <dt>Produto</dt>
                                 <dd>Fuzzy Cardigan</dd>
@@ -123,6 +136,8 @@
             </form>
         </div>
         </div>
+        <script type="text/javascript" src="/caelum-arquivos-curso-web/mirrorfashion/js/jquery.js"></script>
+        <script type="text/javascript" src="/caelum-arquivos-curso-web/mirrorfashion/js/bootstrap.js"></script>
     </body>
     </html>
     
